@@ -1,4 +1,0 @@
-pyperclip
-re
-pyinputplus
-pprint
