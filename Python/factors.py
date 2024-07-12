@@ -9,7 +9,7 @@ try:
     factors = [num, 1]
     factor_pair = [[1, num]]
     pair_count = 1
-    new_pair = [[1,2]]
+    new_pair = []
     for i in range(2, half + 1):
         if num % i == 0:
             count += 1
