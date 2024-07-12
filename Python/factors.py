@@ -7,9 +7,9 @@ try:
     half = math.ceil(num / 2)
     count = 2
     factors = [num, 1]
-    factor_pair = [(1, num)]
+    factor_pair = [[1, num]]
     pair_count = 1
-    new_pair = [1,2]
+    new_pair = [[1,2]]
     for i in range(2, half + 1):
         if num % i == 0:
             count += 1
@@ -17,9 +17,8 @@ try:
             if i not in factor_pair:
                 factor_pair.append([i, (num // i)])
     factor_half = math.ceil(len(factor_pair) / 2)
-    for i in range(0,factor_half):
-        print(i)
-        new_pair[i] = factor_pair[i]
+    for i in range(0, factor_half):
+        new_pair.append(factor_pair[i])
     if count == 2:
         print(f"{num} is prime")
     else:
