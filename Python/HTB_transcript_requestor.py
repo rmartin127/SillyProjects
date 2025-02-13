@@ -17,9 +17,9 @@ args = parser.parse_args()
 Filename = args.file +'.pdf'
 
 print(f'''
-      =====================================================
-      MarcieLee's Hack The Box Academy Transcript requestor
-      =====================================================
+     ╔═════════════════════════════════════════════════════╗
+     ║MarcieLee's Hack The Box Academy Transcript requestor║
+     ╚═════════════════════════════════════════════════════╝
       ''')
 
 
